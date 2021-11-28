@@ -37,18 +37,18 @@ public class Radio {
         if (volumeLevel < 0) {
             volumeLevel = 0;
         }
-        if (volumeLevel > 9) {
-            volumeLevel = 9;
+        if (volumeLevel > 10) {
+            volumeLevel = 10;
         }
         this.volumeLevel = volumeLevel;
     }
 
 
     public void increaseVolume() {
-        if (volumeLevel < 9) {
+        if (volumeLevel < 10) {
             volumeLevel = volumeLevel + 1;
         }
-        if (volumeLevel == 9) {
+        if (volumeLevel == 10) {
             this.volumeLevel = volumeLevel;
         }
     }

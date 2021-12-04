@@ -1,8 +1,8 @@
 package ru.netology.domain;
 
 public class Radio {
-    public int radioStation;
-    public int volumeLevel;
+    private int radioStation;
+    private int volumeLevel;
 
 
     public void setRadioStation(int radioStation) {

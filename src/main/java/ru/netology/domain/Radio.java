@@ -13,13 +13,14 @@ public class Radio {
             return;
         }
         this.radioStation = radioStation;
+
     }
+
 
     public void nextStation() {
         if (radioStation < 9) {
             radioStation = radioStation + 1;
-        }
-        if (radioStation == 9) {
+        } else {
             radioStation = 0;
         }
     }
@@ -27,8 +28,7 @@ public class Radio {
     public void prevStation() {
         if (radioStation > 0) {
             radioStation = radioStation - 1;
-        }
-        if (radioStation == 0) {
+        } else {
             radioStation = 9;
         }
     }

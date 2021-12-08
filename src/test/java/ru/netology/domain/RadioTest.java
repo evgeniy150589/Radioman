@@ -70,6 +70,20 @@ class RadioTest {
     }
 
     @Test
+
+    public void shouldTheRadioStationSwitchFrom8To9() {
+        Radio radio = new Radio();
+        radio.setRadioStation(8);
+
+        radio.nextStation();
+
+
+        int expected = 9;
+        int actual = radio.getRadioStation();
+        assertEquals(expected, actual);
+    }
+
+    @Test
     public void shouldTheRadioStationBeLess0() {
         Radio radio = new Radio();
         radio.setRadioStation(0);
